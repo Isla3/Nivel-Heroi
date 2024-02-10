@@ -1,33 +1,31 @@
-function saldo(){
-let vitorias = 100
-let derrotas = 4
-let saldoRankeada = vitorias - derrotas;
-console.log("Saldo Rankeada: " + saldo)}
+let resultado = saldo(100,5)
 
+function saldo(vitorias, derrotas){
+let saldoRankeada = vitorias - derrotas
+return saldoRankeada}
+
+fNivel()
 function fNivel() {
-    let rankeado = saldo
-    let nivel = ""
     
-    if (rankeado < 10){
-   nivel = "Ferro"
+    if (resultado < 10){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Ferro")
    }
-   else if (rankeado <= 20){
-   nivel = "Bronze"
+   else if (resultado <= 20){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Bronze")
    } 
-   else if (rankeado <= 50){
-   nivel = "Prata"
+   else if (resultado <= 50){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Prata")
    }
- else if (rankeado <= 80){
-   nivel = "Ouro"
-  }
-  else if (rankeado <= 90){
-   nivel = "Diamante"
+   else if (resultado <= 80){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Ouro")
    }
-else if (rankeado <= 100){
-   nivel = "Lendário"
+   else if (resultado <= 90){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Diamante")
    }
-   else if (rankeado >= 101){
-   nivel = "Imortal"
+   else if (resultado <= 100){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Lendário")
+   }
+   else if (resultado >= 101){
+   console.log ("O herói tem saldo de: "+resultado+ " e está no nível Imortal")
    }
    }
-   console.log("O herói tem saldo de: " + rankeado + " e está no nível de: " + nivel)
