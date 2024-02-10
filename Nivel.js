@@ -1,32 +1,32 @@
-
 let nome = "Peter"
-let xp = 100
+let xp = 10500
 
-function fNivel(nivel) { 
+fNivel()
+
+function fNivel() { 
     
     if (xp < 1000){
-   nivel = "Ferro"
+   console.log("O herói " + nome + " está no nível Ferro")
    }
    else if (xp <= 2000){
-   nivel = "Bronze"
+   console.log("O herói " + nome + " está no nível Bronze")
    } 
    else if (xp <= 5000){
-   nivel = "Prata"
+   console.log("O herói " + nome + " está no nível Prata")
    }
- else if (xp <= 7000){
-   nivel = "Ouro"
-  }
-  else if (xp <= 8000){
-   nivel = "Platina"
+  else if (xp <= 7000){
+   console.log("O herói " + nome + " está no nível Ouro")
+   } 
+   else if (xp <= 8000){
+   console.log("O herói " + nome + " está no nível Platina")
    }
-else if (xp <= 9000){
-   nivel = "Ascendente"
-   }
+   else if (xp <= 9000){
+   console.log("O herói " + nome + " está no nível Ascendente")
+   } 
    else if (xp <= 10000){
-   nivel = "Imortal"
+   console.log("O herói " + nome + " está no nível Imortal")
    }
    else if (xp >= 10001){
-   nivel = "Radiante"
-   }
-}
-   console.log("O herói de nome: " + nome + " está no nível de: " + fNivel)
+   console.log("O herói " + nome + " está no nível Radiante")
+  }
+ }
